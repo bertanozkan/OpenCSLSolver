@@ -18,6 +18,7 @@ Windows binary executable and validation cases can be found in last stable relea
 ```bash
 OpenCSLSolver.exe config_shocktube.txt
 ```
+VTK files will be generated after simulation is completed.
 This binaries compiled without OpenMP so parallel running is not possible. If you want to run parallel simulations from optimized executable, build project from source.
 
 ## Building From Source
@@ -29,6 +30,7 @@ Using config_template.txt create a configuration file for your simulation. A 1D 
 <path to solver executable> <path to configuration file>
 ```
 Or you can use meshes and configuration file from validation cases from the last stable release on this project's GitHub page.
+VTK files will be generated after simulation is completed.
 
 ## Version Control
 There will be no version numbering. Latest stable release with compilation date can be found on release page.
