@@ -23,7 +23,7 @@ project(OpenCSLSolver LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_CXX_FLAGS "-O3")
+set(CMAKE_CXX_FLAGS "-O3 -ffast-math")
 
 add_compile_definitions(COMPILE_WITH_OPENMP)
 
@@ -37,6 +37,8 @@ endif()
 #set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++ -static-libgcc")
 
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static")
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 
 add_executable(
         OpenCSLSolver
