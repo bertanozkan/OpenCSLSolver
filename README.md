@@ -2,7 +2,7 @@
 
 <img src="http://csl.etu.edu.tr/wp-content/uploads/2021/01/CSL_Logo.png" width="200">
 
-OpenCSLSolver is an open-source, cross-platform, parallel, pressure based CFD solver. OpenCSLSolver is a side project of me from refactored version of some parts of the solver I developed for my [M.Sc. thesis](https://www.researchgate.net/publication/332719238_Development_of_a_Pressure_Based_Unstructured_GPU_Accelerated_CFD_Solver_for_Compressible_Reacting_Flows_at_all_MACH_Numbers) for [Combustion Systems Laboratory](http://csl.etu.edu.tr/) at [TOBB University of Economics and Technology](https://www.etu.edu.tr/).
+OpenCSLSolver is an open-source, cross-platform, parallel, pressure based CFD solver. OpenCSLSolver is a side project of me. OpenCSLSolver is refactored version of some parts from the solver I developed for my [M.Sc. thesis](https://www.researchgate.net/publication/332719238_Development_of_a_Pressure_Based_Unstructured_GPU_Accelerated_CFD_Solver_for_Compressible_Reacting_Flows_at_all_MACH_Numbers) for [Combustion Systems Laboratory](http://csl.etu.edu.tr/) at [TOBB University of Economics and Technology](https://www.etu.edu.tr/).
 
 Features
 * Segregated Pressure Based
@@ -34,13 +34,13 @@ Or you can use meshes and configuration file from validation cases from the last
 Please open an issue to get help and support about this project.
 
 ## Roadmap
-K-epsilon turbulence model and simple chemistry solver will be integrated in near future.
+K-epsilon turbulence model and simple chemistry solver will be integrated in near future. Code documentation, user guide and theoretical guide is planned.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Acknowledgements
-This solver is possible thanks to Dr. Sıtkı USLU. And I want to thank all current and past researchers of Combustion Systems Laboratory for their help and contribution.
+This solver is possible thanks to Dr. Sıtkı USLU. And I want to thank all current and past researchers of Combustion Systems Laboratory for their help and contribution. Also I want to thank CMPS development team for sharing their knowledge. And I want to thank Peren Turan for her patience and support.
 
 ## License
 
