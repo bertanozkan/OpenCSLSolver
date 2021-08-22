@@ -1,0 +1,125 @@
+#
+#OpenCSLSolver: An open-source, parallel, pressure based CFD solver.
+#Copyright (C) 2021  Bertan ÖZKAN
+#
+#This program is free software: you can redistribute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+# any later version.
+#
+#This program is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+# -------------------This is a template of the config file to use with OpenCSLSolver.-----------------------
+
+#---------------------------------------------MESH----------------------------------------------------------
+
+# Name of the mesh file.
+MESH_FILE_NAME
+
+# Command to generate 1D mesh              
+# Enter Lx, Ly, Lz, dx with spaces between.
+GENERATE_1D_MESH
+
+#--------------------------------------------EQUATIONS------------------------------------------------------
+
+# Selection of problem type.
+# "HEAT_CONDUCTION" for solving heat problems
+# "FLUID_FLOW" for solving fluid flow problems
+PROBLEM_TYPE
+
+# Selection of flow type.               
+# "VISCOUS" for solving viscous flows   
+# "INVISCID" for solving inviscid flows 
+FLOW_TYPE
+
+# Selection of timestepping type.    
+# "STEADY" for steady solution       
+# "TRANSIENT" for transient solution 
+TIMESTEPPING_TYPE
+
+#-------------------------------------------NUMERICS-------------------------------------------------------
+
+# Selection of matrix solver type.                           
+# "CG" for Conjugate gradient matrix solver                  
+# "ILU_BICGSTAB" for BICGSTAB solver with ILU preconditioner 
+MATRIX_SOLVER_TYPE
+
+# Selection of convective flux type.                          
+# "FIRST_ORDER_UPWIND" for first order upwind convective flux 
+# "BLENDED_CENTRAL" for blended central and upwind convective flux       
+CONV_FLUX_TYPE
+
+# Timestep of unsteady simulation.
+TIME_STEP
+
+# Ramp parameters for implicit underrelaxation parameter   
+# Ramp start, ramp end, ramp end iteration number          
+UNDERRELAX_RAMP
+
+#-------------------------------------------INITIAL CONDITIONS----------------------------------------------
+
+# Initial condition of velocity vector in units of [m/s].
+# Enter "x" "y" "z" components with spaces between.
+VELOCITY_IC
+
+# Initial condition of Pressure in unit of [Pa].
+PRESSURE_IC
+
+# Initial condition of Temperature in unit of [K].
+TEMPERATURE_IC
+
+# Initial condition of right side in 1D mesh, Pressure in unit of [Pa].
+# Used in shocktube simulation
+PRESSURE_IC_RIGHT
+
+# Initial condition of right side in 1D mesh, Temperature in unit of [K].
+# Used in shocktube simulation
+TEMPERATURE_IC_RIGHT                                                                                
+
+#-------------------------------------------BOUNDARY CONDITIONS---------------------------------------------
+
+# Command to set Empty boundary condition
+# Enter only BC index in mesh.           
+SET_EMPTY_BC
+
+# Command to set velocity inlet boundary condition                             
+# Enter bc index, "x", "y", "z" components and temperature with spaces between.
+SET_VEL_INLET_BC
+
+# Command to set supersonic velocity inlet boundary condition                            
+# Enter bc index, "x", "y", "z" components, pressure and temperature with spaces between.
+SET_SUPERSONIC_VEL_INLET_BC
+
+# Command to set pressure outlet boundary condition
+# Enter bc index and pressure with spaces between. 
+SET_PRES_OUTLET_BC
+
+# Command to set slip wall boundary condition
+# Enter only BC index in mesh.               
+SET_SLIP_WALL_BC
+
+# Command to set no-slip wall boundary conditio
+# Enter only BC index in mesh.                 
+SET_NO_SLIP_WALL_BC
+
+#-------------------------------------------SIMULATION CONTROLS---------------------------------------------
+
+# Number of  parallel threads to compute on.
+N_P_THREADS
+
+# Maximum iterations to stop the simulation.
+MAX_ITERATIONS
+
+# Maximum number of inner iterations.
+MAX_INNER_ITER
+
+# Frequency of writing Paraview files.
+VTK_WRITING_FREQUENCY 0
+
