@@ -30,6 +30,9 @@ Using config_template.txt create a configuration file for your simulation. A 1D 
 ```
 Or you can use meshes and configuration file from validation cases from the last stable release on this project's GitHub page.
 
+## Version Control
+There will be no version numbering. Latest stable release with compilation date can be found on release page.
+
 ## Support
 Please open an issue to get help and support about this project.
 
